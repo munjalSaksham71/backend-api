@@ -24,7 +24,7 @@ app.use(function (err, req, res, next) {
 });
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "/index.html"));
+  res.sendFile("public/index.html", { root: __dirname });
 });
 
 const PORT = process.env.PORT || 5000;
