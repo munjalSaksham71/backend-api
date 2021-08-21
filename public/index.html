@@ -6,7 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Crud Api</title>
   </head>
-  <body>
-    <h1>Its Working</h1>
+  <body style="text-align: left; margin-left: 6vh">
+    <h2>Documentation</h2>
+    <h3>Test this API on Postman</h3>
+    <h3>It is a two way API : Seller And Buyer</h3>
+    <div style="margin: 10px">
+      <div style="font-weight: 700" >Seller's Routes :</div>
+      <br />
+      GET and POST Route to get products and add new Product <br />
+
+      <div style="margin: 2px; padding: 1vh 2vw; font-weight: bolder">
+        https://crud-api-25f21.herokuapp.com/api/seller
+      </div>
+      <br />
+
+      GET product by id, DELETE and UPDATE Route to get product by id, Delete
+      Product and Update Product resp <br />
+      <div style="margin: 2px; padding: 1vh 2vw; font-weight: bolder" >
+        https://crud-api-25f21.herokuapp.com/api/seller/{id}
+      </div>
+      <br />
+
+    <p>
+      <div style="font-weight: 700" >Buyer's Routes :  </div><br />
+      <div style="font-size: large;"> Add To WishList </div>  <br />
+
+      GET and POST Route to get All the products in wishList and add new Product
+      in wishList <br />
+      <div style="margin: 2px; padding: 1vh 2vw; font-weight: bolder" >https://crud-api-25f21.herokuapp.com/api/buyer/wishList </div> <br />
+
+      DELETE and UPDATE Route to remove product from wishList or to update the
+      quanity in cart resp <br />
+      <div style="margin: 2px; padding: 1vh 2vw; font-weight: bolder"> https://crud-api-25f21.herokuapp.com/api/buyer/wishList/{id}</div>
+      <br />
+
+      <div style="font-size: large;">Orders:  </div> <br />
+
+      GET and POST Route to get All the Orders and New Orders resp<br />
+      <div style="margin: 2px; padding: 1vh 2vw; font-weight: bolder">https://crud-api-25f21.herokuapp.com/api/buyer/order</div>
+      <br />
+
+      GET order By id, DELETE and UPDATE Route to get order info by id, cancel order and to update the order. <br />
+      <div style="margin: 2px; padding: 1vh 2vw; font-weight: bolder">https://crud-api-25f21.herokuapp.com/api/buyer/order/{id} </div><br />
+    </p>
+
+    <h3>NOTE: Make Sure while POST request Your Content-Type must be Application/json in raw format. </h3>
+    </div>
   </body>
 </html>
