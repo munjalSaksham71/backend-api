@@ -1,3 +1,4 @@
+import path from "path";
 import express from "express";
 import dotenv from "dotenv";
 import productRoutes from "./routes/productRoutes.js";
@@ -23,7 +24,7 @@ app.use(function (err, req, res, next) {
 });
 
 app.get("/", (req, res) => {
-  res.send("Working!!!");
+  res.sendFile(path.join(__dirname, "/index.html"));
 });
 
 const PORT = process.env.PORT || 5000;
