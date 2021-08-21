@@ -23,6 +23,8 @@ app.use(function (err, req, res, next) {
   next();
 });
 
+const __dirname = path.resolve();
+
 app.get("/", (req, res) => {
   res.sendFile("public/index.html", { root: __dirname });
 });
